@@ -1,6 +1,6 @@
 #the lab name is not static here as it has to be globally unique 
 $labName = "psconf$((1..6 | ForEach-Object { [char[]](97..122) | Get-Random }) -join '')"
-$azureContext = 'YOUR Azure JSON context here - Use Save-AzureRmContext after having selected your subscription!'
+$azureContext = 'z:\DscWorkshop\DscWorkshop\AzureContext.json'
 $azureLocation = 'West Europe' # Please use West Europe for the conference
 
 #region Lab setup
